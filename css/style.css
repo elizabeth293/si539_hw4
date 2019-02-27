@@ -1,0 +1,162 @@
+
+* {
+	text-align: center;
+}
+
+/* I got assistance with this from https://accessibility.oit.ncsu.edu/it-accessibility-at-nc-state/developers/accessibility-handbook/mouse-and-keyboard-events/skip-to-main-content/ */
+a.skip-to-content {
+	left: -999px;
+	position: absolute;
+	z-index: -999;
+}
+
+html {
+	background: #FFFFFF url("../images/background.png");
+	background-repeat: no-repeat;
+	font-family: 'Lato', sans-serif;
+}
+
+h1 {
+	font-family: 'Rochester', sans-serif;
+	font-size: 90px;
+	margin: 20px;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	border-bottom: 5px solid #ffbcc9;
+	padding-bottom: 20px;
+}
+
+header img {
+	width: 300px;
+	margin: 20px;
+}
+
+.description {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: center;
+	align-items: flex-start;
+	margin-left: 100px;
+	margin-right: 100px;
+	font-style: italic;
+	font-size: 40px;
+}
+
+.description p {
+	margin: 10px;
+	text-align: left;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	align-content: space-between;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.item {
+	box-sizing: border-box;
+	width: 40vw;
+	margin: 20px;
+}
+
+section p {
+	text-align: center;
+	font-style: italic;
+}
+
+.item ul {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.item li {
+	text-align: left;
+	font-size: 30px;
+}
+
+.item a {
+	color: #b10f44;
+}
+
+.item img {
+	width: 100%;
+	border-radius: 15px;
+}
+
+.item p {
+	font-size: 30px;
+}
+
+.nav li {
+  margin: 20px;
+  vertical-align: top;
+}
+
+.smallnav ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.smallnav li {
+  margin: 10px;
+  vertical-align: bottom;
+}
+
+main {
+	margin-top: 50px;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	margin: 200px;
+	font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: #b10f44;
+}
+
+.current {
+  text-transform: uppercase;
+	color: #b10f44;
+}
+
+.category {
+	font-weight: bold;
+}
+
+.nav .btn {
+	box-sizing: border-box;
+	border: 5px solid #ffbcc9;
+	background-color: white;
+	width: 350px;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 0;
+	font-size: 50px;
+}
+
+i {
+	font-size: .75em;
+}
