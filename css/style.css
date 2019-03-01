@@ -24,12 +24,12 @@ h1 {
 }
 
 header {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: center;
 	border-bottom: 5px solid #ffbcc9;
 	padding-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
 }
 
 header img {
@@ -68,6 +68,7 @@ header img {
 	box-sizing: border-box;
 	width: 40vw;
 	margin: 20px;
+	font-size: 20px
 }
 
 section p {
@@ -84,7 +85,6 @@ section p {
 
 .item li {
 	text-align: left;
-	font-size: 20px;
 }
 
 .item a {
@@ -94,10 +94,6 @@ section p {
 .item img {
 	width: 100%;
 	border-radius: 15px;
-}
-
-.item p {
-	font-size: 30px;
 }
 
 .nav li {
@@ -161,18 +157,39 @@ i {
 	font-size: .75em;
 }
 
-/* media query tests */
 @media screen and (min-width: 700px) {
+	.nav ul {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+	}
+	.nav li {
+		margin: 10px;
+	}
+	.nav .btn {
+		border: 5px solid #ffbcc9;
+		background-color: white;
+		width: auto;
+	  padding: 10px;
+	  border-radius: 10px;
+	  display: inline-block;
+	  margin: 0;
+		font-size: 30px;
+	}
 	.description p {
 		font-size: 20px;
 	}
-}
-
-@media screen and (min-width: 1000px) {
-	.description {
-		color: pink;
+	.container {
+		display: grid;
 	}
-	.smallnav {
-		display: none;
-	}
+	.item {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-column-gap: 15px;
+ }
+ .item ul {
+	 align-self: center;
+ }
 }
