@@ -1,6 +1,7 @@
 
 * {
 	text-align: center;
+	box-sizing: border-box;
 }
 
 /* I got assistance with this from https://accessibility.oit.ncsu.edu/it-accessibility-at-nc-state/developers/accessibility-handbook/mouse-and-keyboard-events/skip-to-main-content/ */
@@ -45,7 +46,7 @@ header img {
 	margin-left: 100px;
 	margin-right: 100px;
 	font-style: italic;
-	font-size: 40px;
+	font-size: 20px;
 }
 
 .description p {
@@ -83,7 +84,7 @@ section p {
 
 .item li {
 	text-align: left;
-	font-size: 30px;
+	font-size: 20px;
 }
 
 .item a {
@@ -146,7 +147,6 @@ a:hover {
 }
 
 .nav .btn {
-	box-sizing: border-box;
 	border: 5px solid #ffbcc9;
 	background-color: white;
 	width: 350px;
@@ -159,4 +159,20 @@ a:hover {
 
 i {
 	font-size: .75em;
+}
+
+/* media query tests */
+@media screen and (min-width: 700px) {
+	.description p {
+		font-size: 20px;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.description {
+		color: pink;
+	}
+	.smallnav {
+		display: none;
+	}
 }
