@@ -19,7 +19,7 @@ html {
 
 h1 {
 	font-family: 'Rochester', sans-serif;
-	font-size: 90px;
+	font-size: 70px;
 	margin: 20px;
 }
 
@@ -188,6 +188,7 @@ i {
 		display: grid;
 		grid-template-columns: 50% 50%;
 		grid-column-gap: 15px;
+		font-size: 100%;
  }
  .item ul {
 	 align-self: center;
