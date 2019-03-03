@@ -17,12 +17,6 @@ html {
 	font-family: 'Lato', sans-serif;
 }
 
-h1 {
-	font-family: 'Rochester', sans-serif;
-	font-size: 70px;
-	margin: 20px;
-}
-
 header {
 	border-bottom: 5px solid #ffbcc9;
 	padding-bottom: 20px;
@@ -32,9 +26,16 @@ header {
 	align-content: center;
 }
 
+h1 {
+	font-family: 'Rochester', sans-serif;
+	font-size: 15vw;
+	margin: 10px;
+}
+
+
 header img {
-	width: 300px;
-	margin: 20px;
+	width: 40vw;
+	margin: 10px;
 }
 
 .description {
@@ -43,10 +44,9 @@ header img {
 	flex-wrap: wrap;
 	align-content: center;
 	align-items: flex-start;
-	margin-left: 100px;
-	margin-right: 100px;
-	font-style: italic;
-	font-size: 20px;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	font-size: 18px;
 }
 
 .description p {
@@ -66,14 +66,9 @@ header img {
 
 .item {
 	box-sizing: border-box;
-	width: 40vw;
+	width: 100vw;
 	margin: 20px;
-	font-size: 20px
-}
-
-section p {
-	text-align: center;
-	font-style: italic;
+	font-size: 18px
 }
 
 .item ul {
@@ -121,7 +116,7 @@ footer {
 	justify-content: center;
 	flex-direction: row;
 	margin: 200px;
-	font-size: 30px;
+	font-size: 18px;
 }
 
 a {
@@ -145,19 +140,26 @@ a:hover {
 .nav .btn {
 	border: 5px solid #ffbcc9;
 	background-color: white;
-	width: 350px;
+	width: 75%;
   padding: 10px;
   border-radius: 10px;
   display: inline-block;
   margin: 0;
-	font-size: 50px;
+	font-size: 30px;
 }
 
 i {
 	font-size: .75em;
 }
 
+/* For Tablets */
 @media screen and (min-width: 700px) {
+	h1 {
+		font-size: 5vw;
+	}
+	header img {
+		width: 25vw;
+	}
 	.nav ul {
 		display: flex;
 		flex-direction: row;
@@ -193,4 +195,68 @@ i {
  .item ul {
 	 align-self: center;
  }
+
+ .footer {
+	 font-size: 10px;
+ }
+}
+
+/* For Desktop */
+@media screen and (min-width: 1200px) {
+	header {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+	}
+	header a {
+		display: grid;
+		grid-template-columns: 15% 85%;
+	}
+	header img {
+		width: 100px;
+		grid-column-start: 1;
+		grid-column-end: 1;
+		align-self: end;
+	}
+	header h1 {
+		font-size: 40px;
+		grid-column-start: 2;
+		grid-column-end: 2;
+		margin-left: 10px;
+		align-self: end;
+	}
+ .nav {
+	 align-self: end;
+ }
+	.nav .btn {
+		border: 5px solid #ffbcc9;
+		background-color: white;
+		width: auto;
+	  padding: 10px;
+	  border-radius: 10px;
+	  display: inline-block;
+	  margin: 0;
+		font-size: 20px;
+	}
+	}
+	.container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		align-content: space-between;
+		justify-content: center;
+		margin-top: 50px;
+	}
+	.item {
+		display: flex;
+		flex-direction: column;
+		width: 200px;
+	}
+	.item img {
+		margin-bottom: 15px;
+	}
 }
